@@ -31,40 +31,41 @@ export const Home = () => {
     <div className="flex flex-col min-h-screen">
       {/* Hero Section with Parallax */}
       <section
-        className="p-24 relative min-h-[90vh] flex items-center overflow-hidden parallax-bg"
+        className="relative min-h-[85vh] flex items-center overflow-hidden parallax-bg py-20 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: "url('https://picsum.photos/1920/1080?grayscale')",
+          backgroundImage:
+            "url('https://i.ibb.co.com/HD2L78fw/Gemini-Generated-Image-x44fj1x44fj1x44f.png')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-800/80 dark:from-slate-950/95 dark:to-slate-900/90" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left z-10 animate-fade-in-up">
-          <div className="lg:w-3/4">
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight text-white drop-shadow-lg">
+        <div className="relative max-w-7xl mx-auto w-full z-10 animate-fade-in-up text-center lg:text-left">
+          <div className="lg:w-3/4 mx-auto lg:mx-0">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 sm:mb-8 leading-tight text-white drop-shadow-lg">
               Decoding Power. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 Demanding Justice.
               </span>
             </h1>
-            <p className="text-lg md:text-2xl text-slate-200 mb-10 max-w-2xl leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-2xl text-slate-200 mb-8 sm:mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
               Migrant88 is an independent investigative NGO exposing forced
               labour, trafficking, discrimination, and the hidden structures
               that allow exploitation to persist across global supply chains.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Link to="/work">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+              <Link to="/work" className="w-full sm:w-auto">
                 <Button
                   variant="secondary"
                   size="lg"
-                  className="w-full sm:w-auto shadow-xl shadow-blue-900/20"
+                  className="w-full shadow-xl shadow-blue-900/20"
                 >
                   Explore Our Work
                 </Button>
               </Link>
-              <Link to="/campaigns">
+              <Link to="/campaigns" className="w-full sm:w-auto">
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full sm:w-auto text-white border-white hover:bg-white hover:text-slate-900 backdrop-blur-sm bg-white/5"
+                  className="w-full text-white border-white hover:bg-white hover:text-slate-900 backdrop-blur-sm bg-white/5"
                 >
                   Join a Campaign
                 </Button>
@@ -75,15 +76,15 @@ export const Home = () => {
       </section>
 
       {/* What We Do */}
-      <section className="py-24 bg-white dark:bg-slate-950 transition-colors duration-300">
+      <section className="py-16 sm:py-24 bg-white dark:bg-slate-950 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
               What We Do
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-400 mx-auto mt-4 rounded-full"></div>
           </div>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
             {[
               {
                 icon: ShieldAlert,
@@ -127,11 +128,11 @@ export const Home = () => {
       </section>
 
       {/* Spotlight Section */}
-      <section className="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 transition-colors duration-300">
+      <section className="py-16 sm:py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 sm:mb-16">
             <div className="animate-fade-in">
-              <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
                 Spotlight
               </h2>
               <p className="text-slate-600 dark:text-slate-400 mt-2 text-lg">
@@ -140,7 +141,7 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
             {[
               {
                 title: "The Liability Report",
@@ -175,7 +176,7 @@ export const Home = () => {
                 className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col animate-fade-in-up"
                 style={{ animationDelay: `${idx * 0.1}s` }}
               >
-                <div className="h-56 bg-slate-200 dark:bg-slate-700 relative overflow-hidden group">
+                <div className="h-48 sm:h-56 bg-slate-200 dark:bg-slate-700 relative overflow-hidden group">
                   <img
                     src={`https://picsum.photos/600/400?random=${card.img}`}
                     alt={card.title}
@@ -187,8 +188,8 @@ export const Home = () => {
                     {card.badge}
                   </div>
                 </div>
-                <div className="p-8 flex-1 flex flex-col">
-                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+                <div className="p-6 sm:p-8 flex-1 flex flex-col">
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-3">
                     {card.title}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-300 mb-6 flex-1 leading-relaxed">
@@ -210,16 +211,18 @@ export const Home = () => {
       </section>
 
       {/* Our Impact Section (Data Viz) */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 text-white overflow-hidden relative">
-        {/* Background blobs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+      <section className="py-16 sm:py-24 bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 text-white overflow-hidden relative">
+        {/* Background blobs - hidden on mobile for performance/clutter */}
+        <div className="hidden sm:block absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div className="hidden sm:block absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="animate-fade-in-up">
-              <h2 className="text-4xl font-bold mb-8">Our Impact</h2>
-              <ul className="space-y-8">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-8">
+                Our Impact
+              </h2>
+              <ul className="space-y-6 sm:space-y-8">
                 {[
                   {
                     icon: Globe2,
@@ -238,14 +241,14 @@ export const Home = () => {
                   },
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
-                    <div className="mt-1 mr-6 p-3 bg-white/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300">
-                      <item.icon className="text-blue-400" size={28} />
+                    <div className="mt-1 mr-4 sm:mr-6 p-3 bg-white/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300 flex-shrink-0">
+                      <item.icon className="text-blue-400" size={24} />
                     </div>
                     <div>
-                      <h4 className="text-2xl font-semibold mb-2">
+                      <h4 className="text-xl sm:text-2xl font-semibold mb-2">
                         {item.title}
                       </h4>
-                      <p className="text-slate-400 text-lg leading-relaxed">
+                      <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
                         {item.text}
                       </p>
                     </div>
@@ -254,13 +257,13 @@ export const Home = () => {
               </ul>
             </div>
             <div
-              className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10 shadow-2xl animate-fade-in-up"
+              className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl animate-fade-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              <h4 className="text-xl font-semibold mb-6 text-center">
+              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-center">
                 Cumulative Worker Interviews (Since 2013)
               </h4>
-              <div className="h-80 w-full">
+              <div className="h-64 sm:h-80 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={impactData}>
                     <CartesianGrid
@@ -271,14 +274,14 @@ export const Home = () => {
                     <XAxis
                       dataKey="year"
                       stroke="#94a3b8"
-                      tick={{ fontSize: 14 }}
+                      tick={{ fontSize: 12 }}
                       tickMargin={10}
                       axisLine={false}
                       tickLine={false}
                     />
                     <YAxis
                       stroke="#94a3b8"
-                      tick={{ fontSize: 14 }}
+                      tick={{ fontSize: 12 }}
                       axisLine={false}
                       tickLine={false}
                     />
@@ -322,7 +325,7 @@ export const Home = () => {
                   </BarChart>
                 </ResponsiveContainer>
               </div>
-              <p className="text-center text-slate-400 text-sm mt-6 font-medium tracking-wide">
+              <p className="text-center text-slate-400 text-xs sm:text-sm mt-6 font-medium tracking-wide">
                 More than 8500 verified interviews conducted
               </p>
             </div>
@@ -331,13 +334,13 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-sky-700 to-indigo-800 dark:from-sky-900 dark:to-indigo-900 text-white text-center relative overflow-hidden">
+      <section className="py-16 sm:py-24 bg-gradient-to-r from-sky-700 to-indigo-800 dark:from-sky-900 dark:to-indigo-900 text-white text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
             Join Our Movement
           </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
             Receive updates, investigations, and campaign alerts directly to
             your inbox. Be part of the change.
           </p>
@@ -350,7 +353,7 @@ export const Home = () => {
             <Button
               variant="primary"
               size="lg"
-              className="bg-slate-900 text-white hover:bg-slate-800 whitespace-nowrap shadow-xl"
+              className="bg-slate-900 text-white hover:bg-slate-800 whitespace-nowrap shadow-xl w-full sm:w-auto"
             >
               Sign Up for Updates
             </Button>
