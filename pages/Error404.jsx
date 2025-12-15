@@ -126,7 +126,7 @@ export const Error404 = () => {
 
           <Button
             onClick={fetchExcuse}
-            variant="secondary"
+            variant="danger"
             icon={
               <RefreshCw size={16} className={loading ? "animate-spin" : ""} />
             }
