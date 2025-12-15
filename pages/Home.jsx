@@ -54,7 +54,7 @@ export const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
               <Link to="/work" className="w-full sm:w-auto">
                 <Button
-                  variant="secondary"
+                  variant="danger"
                   size="lg"
                   className="w-full shadow-xl shadow-blue-900/20"
                 >
