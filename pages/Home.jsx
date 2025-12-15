@@ -42,7 +42,7 @@ export const Home = () => {
           <div className="lg:w-3/4 mx-auto lg:mx-0">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 sm:mb-8 leading-tight text-white drop-shadow-lg">
               Decoding Power. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-300">
                 Demanding Justice.
               </span>
             </h1>
@@ -82,7 +82,7 @@ export const Home = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
               What We Do
             </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-cyan-400 mx-auto mt-4 rounded-full"></div>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-red-600  to-red-300 mx-auto mt-4 rounded-full"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
             {[
@@ -197,7 +197,7 @@ export const Home = () => {
                   </p>
                   <Link to={card.link}>
                     <Button
-                      variant="outline"
+                      variant="danger"
                       className="w-full hover:bg-slate-50 dark:hover:bg-slate-700"
                     >
                       {card.linkText}
@@ -242,7 +242,7 @@ export const Home = () => {
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
                     <div className="mt-1 mr-4 sm:mr-6 p-3 bg-white/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300 flex-shrink-0">
-                      <item.icon className="text-blue-400" size={24} />
+                      <item.icon className="text-red-400" size={24} />
                     </div>
                     <div>
                       <h4 className="text-xl sm:text-2xl font-semibold mb-2">
@@ -311,12 +311,12 @@ export const Home = () => {
                         >
                           <stop
                             offset="5%"
-                            stopColor="#3b82f6"
+                            stopColor="#e22828ff"
                             stopOpacity={1}
                           />
                           <stop
                             offset="95%"
-                            stopColor="#3b82f6"
+                            stopColor="#d34343ff"
                             stopOpacity={0.6}
                           />
                         </linearGradient>
@@ -334,7 +334,10 @@ export const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-24 bg-gradient-to-r from-sky-700 to-indigo-800 dark:from-sky-900 dark:to-indigo-900 text-white text-center relative overflow-hidden">
+      <section
+        className="py-16 sm:py-24 bg-gradient-to-r from-red-800 via-red-700 to-red-400
+dark:from-red-700 dark:via-red-800 dark:to-red-200 text-white text-center relative overflow-hidden"
+      >
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div className="max-w-4xl mx-auto px-4 relative z-10 animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
@@ -351,9 +354,9 @@ export const Home = () => {
               className="flex-1 px-6 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-400/50 shadow-lg"
             />
             <Button
-              variant="primary"
+              variant="experimental"
               size="lg"
-              className="bg-slate-900 text-white hover:bg-slate-800 whitespace-nowrap shadow-xl w-full sm:w-auto"
+              className="bg-white text-red-700  whitespace-nowrap shadow-xl w-full sm:w-auto"
             >
               Sign Up for Updates
             </Button>

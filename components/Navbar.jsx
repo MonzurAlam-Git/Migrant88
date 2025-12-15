@@ -1,4 +1,4 @@
-import { ChevronDown, Globe, Menu, Moon, Sun, X } from "lucide-react";
+import { ChevronDown, Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext.jsx";
@@ -75,12 +75,10 @@ export const Navbar = () => {
               className="flex-shrink-0 flex items-center gap-2 group"
               onClick={closeMenu}
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-sky-900 to-sky-700 dark:from-sky-700 dark:to-sky-900 rounded-lg flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
-                <Globe size={24} />
+              <div className="w-10 h-10 bg-gradient-to-br from-red-900 to-red-700 dark:from-red-700 dark:to-red-900 rounded-lg flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300">
+                {/* <Globe size={24} /> */}
+                <img src="https://i.ibb.co.com/672HyBWg/m88-2.jpg" alt="logo" />
               </div>
-              <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">
-                MIGRANT88
-              </span>
             </Link>
           </div>
 
@@ -89,7 +87,7 @@ export const Navbar = () => {
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 {link.dropdown ? (
-                  <button className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-200">
+                  <button className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-50 hover:underline dark:hover:bg-slate-800 transition-all duration-200">
                     {link.name}
                     <ChevronDown
                       size={14}
@@ -104,7 +102,7 @@ export const Navbar = () => {
                             <Link
                               key={subItem.name}
                               to={subItem.path}
-                              className="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-700 dark:hover:text-blue-400"
+                              className="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-red-700 dark:hover:text-red-400"
                             >
                               {subItem.name}
                             </Link>
@@ -118,8 +116,8 @@ export const Navbar = () => {
                     to={link.path}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                       location.pathname === link.path
-                        ? "text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-slate-800"
-                        : "text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+                        ? "text-blue-700 dark:text-red-400 bg-red-50 dark:bg-slate-800"
+                        : "text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                     }`}
                   >
                     {link.name}
@@ -137,7 +135,10 @@ export const Navbar = () => {
             </button>
 
             <Link to="/contact#secure" className="ml-3">
-              <button className="bg-gradient-to-r from-sky-700 to-sky-600 hover:from-sky-600 hover:to-sky-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105">
+              <button
+                className="bg-gradient-to-r from-red-600 to-red-400 hover:from-red-600 hover:to-red-500
+ text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105"
+              >
                 Speak Up
               </button>
             </Link>

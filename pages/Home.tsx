@@ -167,7 +167,9 @@ export const Home: React.FC = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="bg-gradient-to-r from-sky-700 to-sky-600 hover:from-sky-600 hover:to-sky-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
+                    className="bg-gradient-to-r from-red-700 to-red-600
+hover:from-red-600 hover:to-red-500
+ text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
                   >
                     View All Reports
                   </Button>
@@ -199,7 +201,9 @@ export const Home: React.FC = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="bg-gradient-to-r from-sky-700 to-sky-600 hover:from-sky-600 hover:to-sky-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
+                    className="bg-gradient-to-r from-red-700 to-red-600
+hover:from-red-600 hover:to-red-500
+ text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
                   >
                     Access the Archive
                   </Button>
@@ -231,7 +235,9 @@ export const Home: React.FC = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="bg-gradient-to-r from-sky-700 to-sky-600 hover:from-sky-600 hover:to-sky-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
+                    className="bg-gradient-to-r from-red-700 to-red-600
+hover:from-red-600 hover:to-red-500
+ text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 w-full"
                   >
                     Listen Now
                   </Button>

@@ -15,10 +15,10 @@ export const Button = ({
       "bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white shadow-blue-500/30",
     outline:
       "border-2 border-slate-300 dark:border-slate-600 bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-white",
+    experimental:
+      "bg-gradient-to-r from-zinc-950 to-zinc-800 text-white hover:from-zinc-900 hover:to-zinc-700",
     danger:
       "bg-gradient-to-r from-red-700 to-red-500 hover:from-red-600 hover:to-red-400 text-white shadow-red-500/30",
-    custom:
-      "bg-gradient-to-r from-sky-700 to-sky-600 hover:from-sky-600 hover:to-sky-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105",
   };
 
   const sizes = {
