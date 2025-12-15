@@ -1,23 +1,31 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import { Navbar } from './components/Navbar.jsx';
-import { Footer } from './components/Footer.jsx';
-import { Home } from './pages/Home.jsx';
-import { About } from './pages/About.jsx';
-import { Work } from './pages/Work.jsx';
-import { Campaigns } from './pages/Campaigns.jsx';
-import { Reports } from './pages/Reports.jsx';
-import { Contact } from './pages/Contact.jsx';
-import { ThemeProvider } from './context/ThemeContext.jsx';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Footer } from "./components/Footer.jsx";
+import { Navbar } from "./components/Navbar.jsx";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
+import { About } from "./pages/About.jsx";
+import { Campaigns } from "./pages/Campaigns.jsx";
+import { Contact } from "./pages/Contact.jsx";
+import { Error404 } from "./pages/Error404.jsx";
+import { Home } from "./pages/Home.jsx";
+import { Reports } from "./pages/Reports.jsx";
+import { Work } from "./pages/Work.jsx";
 
 // Placeholder components
-const Podcast = () => <div className="p-20 text-center text-xl dark:text-white">Podcast Page Coming Soon</div>;
-const Careers = () => <div className="p-20 text-center text-xl dark:text-white">Careers Page Coming Soon</div>;
+const Podcast = () => (
+  <div className="p-20 text-center text-xl dark:text-white">
+    Podcast Page Coming Soon
+  </div>
+);
+const Careers = () => (
+  <div className="p-20 text-center text-xl dark:text-white">
+    Careers Page Coming Soon
+  </div>
+);
 
 function App() {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter>
         <div className="flex flex-col min-h-screen font-sans text-slate-900 dark:text-slate-100 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
           <Navbar />
           <main className="flex-grow">
@@ -30,11 +38,12 @@ function App() {
               <Route path="/podcast" element={<Podcast />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Error404 />} />
             </Routes>
           </main>
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

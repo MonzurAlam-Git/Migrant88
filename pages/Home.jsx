@@ -146,7 +146,7 @@ export const Home = () => {
               {
                 title: "The Liability Report",
                 badge: "Report",
-                color: "blue",
+                color: "red",
                 img: "1",
                 text: "A global investigation series documenting forced labour indicators across industries and countries.",
                 link: "/reports",
@@ -155,7 +155,7 @@ export const Home = () => {
               {
                 title: "The Inquisitor File",
                 badge: "Archive",
-                color: "slate",
+                color: "red",
                 img: "2",
                 text: "A deep dive archive revealing trafficking networks, corporate misconduct, and recruitment deception.",
                 link: "/reports",
@@ -164,7 +164,7 @@ export const Home = () => {
               {
                 title: "Voices from the Supply Chain",
                 badge: "Podcast",
-                color: "purple",
+                color: "red",
                 img: "3",
                 text: "Stories from the ground, investigative commentary, and expert dialogue on forced labour.",
                 link: "/podcast",
@@ -183,7 +183,7 @@ export const Home = () => {
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div
-                    className={`absolute top-4 left-4 bg-${card.color}-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-md shadow-md`}
+                    className={`absolute top-4 left-4 py-2 bg-gradient-to-r from-red-700 to-red-400 hover:from-red-600 hover:to-red-300 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-md shadow-md`}
                   >
                     {card.badge}
                   </div>
@@ -198,7 +198,7 @@ export const Home = () => {
                   <Link to={card.link}>
                     <Button
                       variant="danger"
-                      className="w-full hover:bg-slate-50 dark:hover:bg-slate-700"
+                      className="w-full hover:bg-slate-50 dark:hover:bg-slate-700 shadow-xl hover:shadow-md transition"
                     >
                       {card.linkText}
                     </Button>
