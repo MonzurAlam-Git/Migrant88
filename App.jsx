@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import PodcastPublish from "./components/Admin/PodcastPublish.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
@@ -11,11 +12,6 @@ import { Reports } from "./pages/Reports.jsx";
 import { Work } from "./pages/Work.jsx";
 
 // Placeholder components
-const Podcast = () => (
-  <div className="p-20 text-center text-xl dark:text-white">
-    Podcast Page Coming Soon
-  </div>
-);
 
 const Careers = () => (
   <div className="p-20 font-bold text-center text-xl dark:text-white">
@@ -39,7 +35,7 @@ function App() {
               <Route path="/work" element={<Work />} />
               <Route path="/campaigns" element={<Campaigns />} />
               <Route path="/reports" element={<Reports />} />
-              <Route path="/podcast" element={<Podcast />} />
+              <Route path="/podcast" element={<PodcastPublish />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Error404 />} />

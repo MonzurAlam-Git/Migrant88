@@ -1,19 +1,22 @@
-import React from 'react';
-import { HashRouter, Routes, Route, ScrollRestoration } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { Footer } from './components/Footer';
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { Work } from './pages/Work';
-import { Campaigns } from './pages/Campaigns';
-import { Reports } from './pages/Reports';
-import { Contact } from './pages/Contact';
-import { Error404 } from './pages/Error404.jsx';
-import { ThemeProvider } from './context/ThemeContext.jsx';
+import { HashRouter, Route, Routes } from "react-router-dom";
+import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
+import { About } from "./pages/About";
+import { Campaigns } from "./pages/Campaigns";
+import { Contact } from "./pages/Contact";
+import { Error404 } from "./pages/Error404.jsx";
+import { Home } from "./pages/Home";
+import { Reports } from "./pages/Reports";
+import { Work } from "./pages/Work";
 
 // Placeholder components for routes not fully detailed in the prompt
-const Podcast = () => <div className="p-20 text-center text-xl">Podcast Page Coming Soon</div>;
-const Careers = () => <div className="p-20 text-center text-xl">Careers Page Coming Soon</div>;
+const Podcast = () => (
+  <div className="p-20 text-center text-xl">Podcast Page Coming Soon</div>
+);
+const Careers = () => (
+  <div className="p-20 text-center text-xl">Careers Page Coming Soon</div>
+);
 
 function App() {
   return (
