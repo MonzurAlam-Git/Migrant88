@@ -1,3 +1,4 @@
+import { Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const getYouTubeId = (url) => {
@@ -193,9 +194,13 @@ const PodcastPublish = () => {
 
                 <button
                   onClick={() => handleDelete(podcast.id)}
-                  className="mt-4 text-sm text-gray-400 hover:text-red-600"
+                  className="absolute top-1/2 right-2  transform -translate-y-1/2 bg-white/80 dark:bg-gray-800/70 p-2 rounded-full hover:bg-red-600 transition"
+                  aria-label="Delete podcast"
                 >
-                  Delete
+                  <Trash2
+                    className="text-red-600 hover:text-white "
+                    size={35}
+                  />
                 </button>
               </div>
             );
