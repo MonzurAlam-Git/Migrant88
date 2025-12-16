@@ -15,6 +15,8 @@ export const Button = ({
       "bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-600 hover:to-blue-400 text-white shadow-blue-500/30",
     outline:
       "border-2 border-slate-300 dark:border-slate-600 bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-white",
+    ghost:
+      "bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-white border-0 shadow-none",
     experimental:
       "bg-gradient-to-r from-zinc-950 to-zinc-800 text-white hover:from-zinc-900 hover:to-zinc-700",
     danger:
