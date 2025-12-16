@@ -93,7 +93,7 @@ export const Work: React.FC = () => {
                 </h3>
                 <Link
                   to="/reports"
-                  className="text-blue-600 hover:underline mt-2 inline-block"
+                  className="text-red-600 hover:underline mt-2 inline-block"
                 >
                   Browse all Liability Reports &rarr;
                 </Link>

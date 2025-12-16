@@ -37,7 +37,7 @@ export const Home: React.FC = () => {
           <div className="lg:w-2/3">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
               Decoding Power. <br />
-              <span className="text-blue-400">Demanding Justice.</span>
+              <span className="text-red-400">Demanding Justice.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
               Migrant88 is an independent investigative NGO exposing forced
@@ -58,10 +58,10 @@ export const Home: React.FC = () => {
                 <Button
                   variant="outline"
                   sizbg-gradient-to-r
-                  from-sky-700
-                  to-sky-600
-                  hover:from-sky-600
-                  hover:to-sky-500
+                  from-red-700
+                  to-red-600
+                  hover:from-red-600
+                  hover:to-red-500
                   text-white
                   px-4
                   py-2
@@ -88,11 +88,11 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-slate-900">What We Do</h2>
-            <div className="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
+            <div className="w-16 h-1 bg-red-600 mx-auto mt-4"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="space-y-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-700">
+              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-700">
                 <ShieldAlert size={24} />
               </div>
               <h3 className="text-xl font-bold text-slate-900">
@@ -150,7 +150,7 @@ export const Home: React.FC = () => {
                   alt="Report"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm">
+                <div className="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 uppercase tracking-wider rounded-sm">
                   Report
                 </div>
               </div>
@@ -256,7 +256,7 @@ hover:from-red-600 hover:to-red-500
               <h2 className="text-3xl font-bold mb-6">Our Impact</h2>
               <ul className="space-y-6">
                 <li className="flex items-start">
-                  <Globe2 className="mt-1 mr-4 text-blue-400" size={24} />
+                  <Globe2 className="mt-1 mr-4 text-red-400" size={24} />
                   <div>
                     <h4 className="text-xl font-semibold">Global Reach</h4>
                     <p className="text-slate-400">
@@ -266,7 +266,7 @@ hover:from-red-600 hover:to-red-500
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <FileText className="mt-1 mr-4 text-blue-400" size={24} />
+                  <FileText className="mt-1 mr-4 text-red-400" size={24} />
                   <div>
                     <h4 className="text-xl font-semibold">Evidence Driven</h4>
                     <p className="text-slate-400">
@@ -276,7 +276,7 @@ hover:from-red-600 hover:to-red-500
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="mt-1 mr-4 text-blue-400" size={24} />
+                  <Briefcase className="mt-1 mr-4 text-red-400" size={24} />
                   <div>
                     <h4 className="text-xl font-semibold">Systemic Change</h4>
                     <p className="text-slate-400">
@@ -322,12 +322,12 @@ hover:from-red-600 hover:to-red-500
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-sky-700 text-white text-center">
+      <section className="py-24 bg-red-700 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Join Our Movement
           </h2>
-          <p className="text-lg text-blue-100 mb-8">
+          <p className="text-lg text-red-100 mb-8">
             Receive updates, investigations, and campaign alerts directly to
             your inbox.
           </p>

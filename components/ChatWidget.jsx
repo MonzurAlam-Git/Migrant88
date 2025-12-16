@@ -115,7 +115,7 @@ export const ChatWidget = () => {
         className={`fixed bottom-6 right-6 z-50 p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 ${
           isOpen
             ? "bg-slate-700 text-white rotate-90"
-            : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white"
+            : "bg-gradient-to-r from-red-600 to-indigo-600 text-white"
         }`}
         aria-label="Toggle Chat"
       >
@@ -157,7 +157,7 @@ export const ChatWidget = () => {
               <div
                 className={`max-w-[80%] p-3 rounded-2xl text-sm leading-relaxed ${
                   msg.role === "user"
-                    ? "bg-blue-600 text-white rounded-tr-none"
+                    ? "bg-red-600 text-white rounded-tr-none"
                     : "bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-tl-none shadow-sm"
                 }`}
               >
@@ -185,13 +185,13 @@ export const ChatWidget = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder="Ask about our investigations..."
-              className="w-full pl-4 pr-12 py-3 bg-slate-100 dark:bg-slate-800 border border-transparent focus:border-blue-500 rounded-xl text-sm text-slate-900 dark:text-white focus:outline-none transition-all"
+              className="w-full pl-4 pr-12 py-3 bg-slate-100 dark:bg-slate-800 border border-transparent focus:border-red-500 rounded-xl text-sm text-slate-900 dark:text-white focus:outline-none transition-all"
               disabled={isLoading}
             />
             <button
               type="submit"
               disabled={!inputValue.trim() || isLoading}
-              className="absolute right-2 p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="absolute right-2 p-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             >
               {isLoading ? (
                 <Loader2 size={16} className="animate-spin" />

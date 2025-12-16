@@ -116,7 +116,7 @@ export const Navbar = () => {
                     to={link.path}
                     className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 ${
                       location.pathname === link.path
-                        ? "text-blue-700 dark:text-red-400 bg-red-50 dark:bg-slate-800"
+                        ? "text-red-700 dark:text-red-400 bg-red-50 dark:bg-slate-800"
                         : "text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                     }`}
                   >
@@ -154,7 +154,7 @@ export const Navbar = () => {
             </button>
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -172,7 +172,7 @@ export const Navbar = () => {
                   <>
                     <button
                       onClick={() => toggleDropdown(link.name)}
-                      className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+                      className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                     >
                       {link.name}
                       <ChevronDown
@@ -189,7 +189,7 @@ export const Navbar = () => {
                             key={subItem.name}
                             to={subItem.path}
                             onClick={closeMenu}
-                            className="block px-3 py-2 rounded-md text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-400"
+                            className="block px-3 py-2 rounded-md text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-red-700 dark:hover:text-red-400"
                           >
                             {subItem.name}
                           </Link>
@@ -201,7 +201,7 @@ export const Navbar = () => {
                   <Link
                     to={link.path}
                     onClick={closeMenu}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:text-blue-700 dark:hover:text-blue-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:text-red-700 dark:hover:text-red-400 hover:bg-slate-50 dark:hover:bg-slate-800"
                   >
                     {link.name}
                   </Link>
@@ -212,7 +212,7 @@ export const Navbar = () => {
               <Link
                 to="/contact#secure"
                 onClick={closeMenu}
-                className="block w-full text-center bg-gradient-to-r from-sky-700 to-sky-600 text-white px-4 py-3 rounded-md font-medium shadow-md"
+                className="block w-full text-center bg-gradient-to-r from-red-700 to-red-600 text-white px-4 py-3 rounded-md font-medium shadow-md"
               >
                 Speak Up (Secure Reporting)
               </Link>

@@ -16,9 +16,13 @@ const Podcast = () => (
     Podcast Page Coming Soon
   </div>
 );
+
 const Careers = () => (
-  <div className="p-20 text-center text-xl dark:text-white">
-    Careers Page Coming Soon
+  <div className="p-20 font-bold text-center text-xl dark:text-white">
+    We apologize, but there are currently no vacancies available. <br />
+    <span>
+      We appreciate your interest and encourage you to check back in the future.
+    </span>
   </div>
 );
 

@@ -6,7 +6,7 @@ export const Work = () => {
   return (
     <div className="bg-white dark:bg-slate-950 min-h-screen transition-colors duration-300">
       <div className="bg-slate-900 dark:bg-slate-950 text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 to-purple-900/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-fade-in-up">
           <h1 className="text-5xl font-bold mb-6">
             Inside Global Supply Chains
@@ -67,10 +67,10 @@ export const Work = () => {
             <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300">
               <div className="flex items-center text-sm text-slate-500 dark:text-slate-400 mb-4 space-x-6">
                 <span className="flex items-center font-medium">
-                  <MapPin size={16} className="mr-2 text-blue-500" /> India
+                  <MapPin size={16} className="mr-2 text-red-500" /> India
                 </span>
                 <span className="flex items-center font-medium">
-                  <Layers size={16} className="mr-2 text-blue-500" /> Aviation
+                  <Layers size={16} className="mr-2 text-red-500" /> Aviation
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
@@ -88,7 +88,7 @@ export const Work = () => {
             <div className="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 flex items-center justify-center text-center group hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
               <div>
                 <Search
-                  className="mx-auto text-slate-400 group-hover:text-blue-500 transition-colors duration-300 mb-4"
+                  className="mx-auto text-slate-400 group-hover:text-red-500 transition-colors duration-300 mb-4"
                   size={40}
                 />
                 <h3 className="text-xl font-medium text-slate-600 dark:text-slate-300">
@@ -96,7 +96,7 @@ export const Work = () => {
                 </h3>
                 <Link
                   to="/reports"
-                  className="text-blue-600 dark:text-blue-400 hover:underline mt-4 inline-block font-medium"
+                  className="text-red-600 dark:text-red-400 hover:underline mt-4 inline-block font-medium"
                 >
                   Browse all Liability Reports &rarr;
                 </Link>

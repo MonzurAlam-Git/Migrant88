@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { ChevronDown, Globe, Menu, X } from "lucide-react";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,46 +22,46 @@ export const Navbar: React.FC = () => {
   };
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { 
-      name: 'About', 
-      path: '/about',
+    { name: "Home", path: "/" },
+    {
+      name: "About",
+      path: "/about",
       dropdown: [
-        { name: 'Who We Are', path: '/about' },
-        { name: 'Meet the Team', path: '/about#team' },
-        { name: 'Our Partners', path: '/about#partners' },
-        { name: 'Our Approach', path: '/about#approach' }
-      ]
+        { name: "Who We Are", path: "/about" },
+        { name: "Meet the Team", path: "/about#team" },
+        { name: "Our Partners", path: "/about#partners" },
+        { name: "Our Approach", path: "/about#approach" },
+      ],
     },
-    { 
-      name: 'Our Work', 
-      path: '/work',
+    {
+      name: "Our Work",
+      path: "/work",
       dropdown: [
-        { name: 'Investigations', path: '/work' },
-        { name: 'The Liability Report', path: '/reports?type=Liability' },
-        { name: 'The Inquisitor File', path: '/reports?type=Inquisitor' }
-      ]
+        { name: "Investigations", path: "/work" },
+        { name: "The Liability Report", path: "/reports?type=Liability" },
+        { name: "The Inquisitor File", path: "/reports?type=Inquisitor" },
+      ],
     },
-    { 
-      name: 'Reports', 
-      path: '/reports',
+    {
+      name: "Reports",
+      path: "/reports",
       dropdown: [
-        { name: 'All Reports', path: '/reports' },
-        { name: 'Country Dossiers', path: '/reports?filter=country' },
-        { name: 'Sector Dossiers', path: '/reports?filter=sector' }
-      ]
+        { name: "All Reports", path: "/reports" },
+        { name: "Country Dossiers", path: "/reports?filter=country" },
+        { name: "Sector Dossiers", path: "/reports?filter=sector" },
+      ],
     },
-    { 
-      name: 'Campaigns', 
-      path: '/campaigns',
+    {
+      name: "Campaigns",
+      path: "/campaigns",
       dropdown: [
-        { name: 'Active Campaigns', path: '/campaigns' },
-        { name: 'Past Campaigns', path: '/campaigns#past' }
-      ]
+        { name: "Active Campaigns", path: "/campaigns" },
+        { name: "Past Campaigns", path: "/campaigns#past" },
+      ],
     },
-    { name: 'Podcast', path: '/podcast' },
-    { name: 'Careers', path: '/careers' },
-    { name: 'Contact', path: '/contact' },
+    { name: "Podcast", path: "/podcast" },
+    { name: "Careers", path: "/careers" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -69,11 +69,17 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center gap-2" onClick={closeMenu}>
+            <Link
+              to="/"
+              className="flex-shrink-0 flex items-center gap-2"
+              onClick={closeMenu}
+            >
               <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center text-white">
                 <Globe size={24} />
               </div>
-              <span className="font-bold text-xl tracking-tight text-slate-900">MIGRANT88</span>
+              <span className="font-bold text-xl tracking-tight text-slate-900">
+                MIGRANT88
+              </span>
             </Link>
           </div>
 
@@ -82,43 +88,45 @@ export const Navbar: React.FC = () => {
             {navLinks.map((link) => (
               <div key={link.name} className="relative group">
                 {link.dropdown ? (
-                  <button 
-                    className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:text-blue-700 hover:bg-slate-50 transition-colors"
-                  >
+                  <button className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-slate-700 hover:text-red-700 hover:bg-slate-50 transition-colors">
                     {link.name}
                     <ChevronDown size={14} className="ml-1" />
-                    
+
                     {/* Hover Dropdown */}
                     <div className="absolute left-0 top-full mt-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform z-50 pt-2">
-                        <div className="rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden bg-white">
-                            <div className="py-1">
-                                {link.dropdown.map((subItem) => (
-                                    <Link
-                                        key={subItem.name}
-                                        to={subItem.path}
-                                        className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-blue-700"
-                                    >
-                                        {subItem.name}
-                                    </Link>
-                                ))}
-                            </div>
+                      <div className="rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden bg-white">
+                        <div className="py-1">
+                          {link.dropdown.map((subItem) => (
+                            <Link
+                              key={subItem.name}
+                              to={subItem.path}
+                              className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-red-700"
+                            >
+                              {subItem.name}
+                            </Link>
+                          ))}
                         </div>
+                      </div>
                     </div>
                   </button>
                 ) : (
                   <Link
                     to={link.path}
-                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${location.pathname === link.path ? 'text-blue-700 bg-blue-50' : 'text-slate-700 hover:text-blue-700 hover:bg-slate-50'}`}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                      location.pathname === link.path
+                        ? "text-red-700 bg-red-50"
+                        : "text-slate-700 hover:text-red-700 hover:bg-slate-50"
+                    }`}
                   >
                     {link.name}
                   </Link>
                 )}
               </div>
             ))}
-             <Link to="/contact#secure" className="ml-4">
-                <button className="bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
-                    Speak Up (Secure)
-                </button>
+            <Link to="/contact#secure" className="ml-4">
+              <button className="bg-red-700 hover:bg-red-800 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                Speak Up (Secure)
+              </button>
             </Link>
           </div>
 
@@ -126,7 +134,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-blue-700 hover:bg-slate-100 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-red-700 hover:bg-slate-100 focus:outline-none"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -144,10 +152,15 @@ export const Navbar: React.FC = () => {
                   <>
                     <button
                       onClick={() => toggleDropdown(link.name)}
-                      className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-700 hover:bg-slate-50"
+                      className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-red-700 hover:bg-slate-50"
                     >
                       {link.name}
-                      <ChevronDown size={16} className={`transform transition-transform ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
+                      <ChevronDown
+                        size={16}
+                        className={`transform transition-transform ${
+                          activeDropdown === link.name ? "rotate-180" : ""
+                        }`}
+                      />
                     </button>
                     {activeDropdown === link.name && (
                       <div className="pl-4 space-y-1 bg-slate-50">
@@ -156,7 +169,7 @@ export const Navbar: React.FC = () => {
                             key={subItem.name}
                             to={subItem.path}
                             onClick={closeMenu}
-                            className="block px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-blue-700"
+                            className="block px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:text-red-700"
                           >
                             {subItem.name}
                           </Link>
@@ -168,7 +181,7 @@ export const Navbar: React.FC = () => {
                   <Link
                     to={link.path}
                     onClick={closeMenu}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-700 hover:bg-slate-50"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-red-700 hover:bg-slate-50"
                   >
                     {link.name}
                   </Link>
@@ -176,13 +189,13 @@ export const Navbar: React.FC = () => {
               </div>
             ))}
             <div className="pt-4 pb-2 border-t border-slate-200">
-                <Link 
-                    to="/contact#secure" 
-                    onClick={closeMenu}
-                    className="block w-full text-center bg-red-700 text-white px-4 py-3 rounded-md font-medium"
-                >
-                    Speak Up (Secure Reporting)
-                </Link>
+              <Link
+                to="/contact#secure"
+                onClick={closeMenu}
+                className="block w-full text-center bg-red-700 text-white px-4 py-3 rounded-md font-medium"
+              >
+                Speak Up (Secure Reporting)
+              </Link>
             </div>
           </div>
         </div>

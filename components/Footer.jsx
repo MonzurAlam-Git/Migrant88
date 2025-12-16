@@ -161,7 +161,7 @@ export const Footer = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500 text-white placeholder-slate-500 text-sm"
+                className="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-md focus:outline-none focus:ring-1 focus:ring-red-500 text-white placeholder-slate-500 text-sm"
               />
               <Button
                 variant="experimental"

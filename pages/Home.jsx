@@ -56,7 +56,7 @@ export const Home = () => {
                 <Button
                   variant="danger"
                   size="lg"
-                  className="w-full shadow-xl shadow-blue-900/20"
+                  className="w-full shadow-xl shadow-red-900/20"
                 >
                   Explore Our Work
                 </Button>
@@ -88,7 +88,7 @@ export const Home = () => {
             {[
               {
                 icon: ShieldAlert,
-                color: "blue",
+                color: "red",
                 title: "Investigations",
                 text: "We uncover forced labour, trafficking, corporate secrecy, and discrimination across global production networks.",
               },
@@ -213,7 +213,7 @@ export const Home = () => {
       {/* Our Impact Section (Data Viz) */}
       <section className="py-16 sm:py-24 bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-950 dark:to-slate-900 text-white overflow-hidden relative">
         {/* Background blobs - hidden on mobile for performance/clutter */}
-        <div className="hidden sm:block absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div className="hidden sm:block absolute top-0 right-0 w-96 h-96 bg-red-600/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
         <div className="hidden sm:block absolute bottom-0 left-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -241,7 +241,7 @@ export const Home = () => {
                   },
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
-                    <div className="mt-1 mr-4 sm:mr-6 p-3 bg-white/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300 flex-shrink-0">
+                    <div className="mt-1 mr-4 sm:mr-6 p-3 bg-white/10 rounded-lg group-hover:bg-red-500/20 transition-colors duration-300 flex-shrink-0">
                       <item.icon className="text-red-400" size={24} />
                     </div>
                     <div>
@@ -343,7 +343,7 @@ dark:from-red-700 dark:via-red-800 dark:to-red-200 text-white text-center relati
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">
             Join Our Movement
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-red-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
             Receive updates, investigations, and campaign alerts directly to
             your inbox. Be part of the change.
           </p>
@@ -351,7 +351,7 @@ dark:from-red-700 dark:via-red-800 dark:to-red-200 text-white text-center relati
             <input
               type="email"
               placeholder="Email Address"
-              className="flex-1 px-6 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-4 focus:ring-blue-400/50 shadow-lg"
+              className="flex-1 px-6 py-4 rounded-xl text-slate-900 focus:outline-none focus:ring-4 focus:ring-red-400/50 shadow-lg"
             />
             <Button
               variant="experimental"
