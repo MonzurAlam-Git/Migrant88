@@ -10,20 +10,14 @@
         darkMode: "class",
         theme: {
           extend: {
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"], // Change global sans font to Montserrat
+            },
             animation: {
-              "fade-in": "fadeIn 1s ease-out",
-              "fade-in-up": "fadeInUp 0.8s ease-out",
-              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              // ... existing animations ...
             },
             keyframes: {
-              fadeIn: {
-                "0%": { opacity: "0" },
-                "100%": { opacity: "1" },
-              },
-              fadeInUp: {
-                "0%": { opacity: "0", transform: "translateY(20px)" },
-                "100%": { opacity: "1", transform: "translateY(0)" },
-              },
+              // ... existing keyframes ...
             },
           },
         },
@@ -69,6 +63,10 @@
         }
       }
     </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/index.css" />
     <link rel="icon" href="https://i.ibb.co.com/672HyBWg/m88-2.jpg" />
   </head>
