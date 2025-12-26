@@ -15,7 +15,7 @@ const AuthPage = () => {
         {/* Left Side: Banner/Hero */}
         <div className="hidden md:block w-full md:w-1/2 relative">
           <img
-            src="https://i.ibb.co.com/HD2L78fw/Gemini-Generated-Image-x44fj1x44fj1x44f.png"
+            src="https://i.ibb.co.com/mVwJyNyb/Gemini-Generated-Image-n86ylun86ylun86y.png"
             alt="Atmospheric landscape"
             className="absolute inset-0 w-full h-full object-cover opacity-80"
           />
