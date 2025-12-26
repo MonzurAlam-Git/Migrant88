@@ -63,6 +63,7 @@ export const Navbar = () => {
     { name: "Podcast", path: "/podcast" },
     { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" },
+    { name: "Dashboard", path: "/dashboard" },
   ];
 
   return (

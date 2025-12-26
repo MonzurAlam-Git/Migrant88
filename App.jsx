@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AuthPage from "./components/Authentication/AuthPage.jsx";
+import AdminDashboard from "./components/Dashboard/AdminDashboard.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
@@ -40,6 +41,7 @@ function App() {
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/authentication" element={<AuthPage />} />
+              <Route path="/dashboard" element={<AdminDashboard />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
           </main>
