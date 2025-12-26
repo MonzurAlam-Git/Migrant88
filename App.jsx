@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PodcastPublish from "./components/Admin/PodcastPublish.jsx";
+import AuthPage from "./components/Authentication/AuthPage.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { ThemeProvider } from "./context/ThemeContext.jsx";
@@ -38,6 +39,7 @@ function App() {
               <Route path="/podcast" element={<PodcastPublish />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/authentication" element={<AuthPage />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
           </main>

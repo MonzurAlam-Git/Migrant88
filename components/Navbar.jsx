@@ -66,7 +66,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
+    <nav className="bg-white/90 dark:bg-black backdrop-blur-md border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
@@ -134,12 +134,12 @@ export const Navbar = () => {
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
-            <Link to="/contact#secure" className="ml-3">
+            <Link to="/authentication" className="ml-3">
               <button
-                className="bg-gradient-to-r from-red-600 to-red-400 hover:from-red-600 hover:to-red-500
- text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105"
+                className="bg-gradient-to-r from-red-900 to-red-600 hover:from-red-800 hover:to-red-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105
+"
               >
-                Speak Up
+                Login
               </button>
             </Link>
           </div>
@@ -210,11 +210,11 @@ export const Navbar = () => {
             ))}
             <div className="pt-4 pb-2 border-t border-slate-200 dark:border-slate-800">
               <Link
-                to="/contact#secure"
+                to="/authentication"
                 onClick={closeMenu}
                 className="block w-full text-center bg-gradient-to-r from-red-700 to-red-600 text-white px-4 py-3 rounded-md font-medium shadow-md"
               >
-                Speak Up (Secure Reporting)
+                Login
               </Link>
             </div>
           </div>
