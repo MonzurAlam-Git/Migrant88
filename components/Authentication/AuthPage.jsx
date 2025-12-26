@@ -39,7 +39,9 @@ const AuthPage = () => {
               <h2 className="text-4xl font-light text-white leading-tight">
                 Decoding Power
                 <br />
-                <span className="font-semibold italic">Demanding Justice</span>
+                <span className="font-semibold italic">
+                  Demanding Justice ..
+                </span>
               </h2>
               <div className="mt-8 flex gap-2">
                 <div className="w-8 h-1 bg-white/20 rounded-full" />
@@ -157,7 +159,7 @@ const AuthPage = () => {
                 </div>
                 <div className="relative flex justify-center text-xs">
                   <span className="bg-[#1a1625] px-2 text-white/20 uppercase tracking-widest">
-                    Or register with
+                    {isLogin ? "Log in with" : "register with"}
                   </span>
                 </div>
               </div>

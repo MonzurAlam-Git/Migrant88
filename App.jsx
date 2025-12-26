@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PodcastPublish from "./components/Admin/PodcastPublish.jsx";
 import AuthPage from "./components/Authentication/AuthPage.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Navbar } from "./components/Navbar.jsx";
@@ -9,6 +8,7 @@ import { Campaigns } from "./pages/Campaigns.jsx";
 import { Contact } from "./pages/Contact.jsx";
 import { Error404 } from "./pages/Error404.jsx";
 import { Home } from "./pages/Home.jsx";
+import PodcastPublish from "./pages/PodcastShowcase.jsx";
 import { Reports } from "./pages/Reports.jsx";
 import { Work } from "./pages/Work.jsx";
 
